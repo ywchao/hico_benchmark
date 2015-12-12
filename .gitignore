@@ -1,0 +1,14 @@
+# tar files
+*.tar.gz
+
+# mat files
+*.mat
+
+# 3rd party
+3rd_party/*
+
+# cache files
+caches/
+
+# hico dataset
+external/hico_20150920
