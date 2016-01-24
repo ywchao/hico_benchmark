@@ -42,9 +42,9 @@ Please cite HICO Benchmark in your publications if it helps your research:
 
 Our pre-computed DNN features guarantee exact reproduction of the paper's results.
 
-  <pre>
+  ```
   ./data/scripts/fetch_dnn_features.sh
-  </pre>
+  ```
 
 This will populate the `data` folder with `precomputed_dnn_features`.
 
