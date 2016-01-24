@@ -72,3 +72,8 @@ This will populate the `data` folder with `precomputed_dnn_features`.
   - The code will output mean average precision (mAP) on 600 HOI classes.
   - Similar to `train_svm_vo.m`, you can select the feature type by editing `eval_default_run.m` and `eval_ko_run.m`.
 
+### Notes on our training procedure:
+  - The HICO dataset provides positive and negative examples for each HOI category. Positive examples are images containing the HOI, e.g. images with "riding a bicycle." Negative examples are images containing the object but not the HOI, e.g. images with "bicycle" but not "riding a bicycle."
+  - We train one SVM classifier for each HOI category using these positives and negatives. In addition, we augment the negative examples by sampling additional images from the "Unknown" images (e.g. images containing no bicycles) until the total number of training examples (i.e. number of positives + number of negatives) is 5000. The limit of 5000 images is due to a memory limitation of our SVM training. The augmented training set is saved to `anno_iccv.mat`.
+  - We have been made aware that it may be possible to obtain significantly better results for the default evaluation setting by removing the 5000 limit, and that it may be possible to obtain significantly better results for the “Known Object” setting by doing away with the augmentation.
+
