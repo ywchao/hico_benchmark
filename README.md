@@ -24,7 +24,7 @@ Please cite HICO Benchmark in your publications if it helps your research:
 1. Download and extract the HICO dataset.
 
     ```Shell
-    wget http://napoli18.eecs.umich.edu/public_html/data/hico_20150920.tar.gz
+    wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&id=1Qc3SOXdjzVUd1LDuG0ZS7DsE4Kb0FYVr" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1/p')&id=1Qc3SOXdjzVUd1LDuG0ZS7DsE4Kb0FYVr" -O hico_20150920.tar.gz && rm -rf /tmp/cookies.txt
     tar -zxvf hico_20150920.tar.gz
     ```
 
