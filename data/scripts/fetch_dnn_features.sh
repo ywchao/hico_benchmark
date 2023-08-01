@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )"
-ID=1lzZW29NQ241UrfWUuZC_lG4u0Gp1l2If
+ID=161Y8knDilXygyjlbH0ZR3arut0WO3E3z
 FILE=$DIR/precomputed_dnn_features.tar.gz
 
 if [ ! -f "$FILE" ]; then
