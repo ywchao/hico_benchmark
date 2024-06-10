@@ -6,7 +6,7 @@ Code for reproducing the results in the following paper:
 Yu-Wei Chao, Zhan Wang, Yugeng He, Jiaxuan Wang, and Jia Deng  
 IEEE International Conference on Computer Vision (ICCV), 2015 
 
-Check out the [project site](http://www.umich.edu/~ywchao/hico/) for more details.
+Check out the [project site](https://umich-ywchao-hico.github.io/) for more details.
 
 ### Citing HICO Benchmark
 
